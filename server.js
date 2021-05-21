@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+//config a middleware (a layer on the server)
 const loggingMiddleware = (req, res, next) => {
   const timeStamp = new Date();
   console.log("request received at: " + timeStamp);
